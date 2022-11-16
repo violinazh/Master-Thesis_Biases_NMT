@@ -1,0 +1,29 @@
+#!/bin/bash
+
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/vzhekova/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/vzhekova/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/vzhekova/miniconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/vzhekova/miniconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
+
+
+
+# export PATH="/home/vzhekova/miniconda3/bin:$PATH"  # commented out by conda initialize
+
+export CUDA_VISIBLE_DEVICES=0
+export CUDA_DEVICE_ORDER=PCI_BUS_ID
+
+
+export PS1='\[\033[01;36m\][\[\033[m\]\[\033[01;34m\]\u@\h\[\033[m\] \[\033[01;32m\]\W\[\033[m\]\[\033[01;36m\]]\[\033[m\]\n$ '
+

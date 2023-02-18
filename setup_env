@@ -24,6 +24,9 @@ unset __conda_setup
 export CUDA_VISIBLE_DEVICES=0
 export CUDA_DEVICE_ORDER=PCI_BUS_ID
 
+export FAST_ALIGN_BASE=/home/vzhekova/fast_align
+
+
 
 export PS1='\[\033[01;36m\][\[\033[m\]\[\033[01;34m\]\u@\h\[\033[m\] \[\033[01;32m\]\W\[\033[m\]\[\033[01;36m\]]\[\033[m\]\n$ '
 

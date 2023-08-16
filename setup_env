@@ -27,7 +27,7 @@ export HF_HOME=/export/data4/vzhekova/.cache/huggingface
 export CUDA_VISIBLE_DEVICES=0
 export CUDA_DEVICE_ORDER=PCI_BUS_ID
 
-export FAST_ALIGN_BASE=/home/vzhekova/fast_align
+# export FAST_ALIGN_BASE=/home/vzhekova/fast_align
 
 
 
